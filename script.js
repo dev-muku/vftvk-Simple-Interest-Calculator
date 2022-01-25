@@ -32,7 +32,7 @@ function validate_principal() // Validating principal amout field.
     if (principal.value <= 0) {
         alert("Enter a positive number");
         principal.value = '';
-        principal.focus;
+        principal.focus();
     }
 
 }
