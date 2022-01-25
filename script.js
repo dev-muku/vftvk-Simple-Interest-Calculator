@@ -17,6 +17,10 @@ function compute() //Compute Interest function
         rate+"\%\<\/mark\>.\<br\/\>You will receive an amount of \<mark\>"+
         interest+"\<\/mark\>,\<br\/\>in the year \<mark\>"+year+"\<\/mark\>\<br \/\>";
     }
+    else if (principal == 0) {
+        alert("Principal amout field is empty.\nPlease enter a positive number!");
+        document.getElementById("principal").focus();
+    }
 }
 
 function updateRate() //Showing dynamically changed value for Rate of Interest. 
